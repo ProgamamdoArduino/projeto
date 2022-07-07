@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>como  fazer um  ventilador</title>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>como fazer um ventilador no Tinkercad</h1>
+        <br>
+        <iframe width="270px" height="159" src="https://youtube.com/embed/1K4bqKIdTUs"  allowfullscreen></iframe>
+
+        <h3>o video acima mostra como o ventilador funciona</h3>
+    <br>
+    <h2>codigo do projeto</h2>
+    <code class="language-markup">int motor=5;
+        <br>
+        int valor;
+    <br>
+        
+        void setup()
+        {
+            <br>
+          Serial.begin(9600);<br>  
+        }
+        <br>
+        void loop() <br>
+        {
+            <br>
+          valor=analogRead (A0)/4; <br>
+          analogWrite(motor,valor); <br>
+          
+          Serial.print("Motor en movimiento"); <br>
+          Serial.println(valor); <br>
+        }</code>
+
+        <h2>imagem do projeto</h2>
+
+        <img src="imagem do projeto.png">
+        <style>
+            img {
+               width: 380pxpx;
+               height: 190px;
+            
+            }
+        </style>
+
+    
+    </body>
+</html>
